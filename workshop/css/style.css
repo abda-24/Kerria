@@ -1,0 +1,190 @@
+*{
+    font-family: "Nunito Sans", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+}
+:root{
+    --primaryColor:#e77584;
+}
+nav .active{
+    color: var(--primaryColor) !important;
+}
+.home{
+    background-image: url(../images/header-bg.jpg);
+    background-size: cover;
+}
+.home .layer{
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.home h2{
+    font-size: 4.5rem;
+}
+.home h2:after{
+    content: '';
+    animation: words 8s infinite alternate;
+}
+@keyframes words{
+    0% {content: "|";}
+    3% {content: "D|";}
+    5% {content: "De|";}
+    7% {content: "Dev|";}
+    10% {content: "Deve|";}
+    13% {content: "Devel|";}
+    15% {content: "Develo|";}
+    17% {content: "Develop|";}
+    20% {content: "Developm|";}
+    24% {content: "Developme|";}
+    25% {content: "Developmen|";}
+    27% {content: "Development|";}
+    30% {content: "Development|";}
+    32% {content: "Developmen|";}
+    35% {content: "Developme|";}
+    37% {content: "Develop|";}
+    40% {content: "Develo|";}
+    42% {content: "Devel|";}
+    45% {content: "Deve|";}
+    47% {content: "Dev|";}
+    50% {content: "De|";}
+    52% {content: "Des|";}
+    55% {content: "Desi|";}
+    57% {content: "Desig|";}
+    60% {content: "Design|";}
+    62% {content: "Designe|";}
+    65% {content: "Designer|";}
+    67% {content: "Designer|";}
+    70% {content: "Designe|";}
+    72% {content: "Design|";}
+    75% {content: "Desig|";}
+    77% {content: "Desi|";}
+    80% {content: "Des|";}
+    82% {content: "De|";}
+    85% {content: "Dev|";}
+    87% {content: "Deve|";}
+    90% {content: "Devel|";}
+    92% {content: "Develo|";}
+    95% {content: "Develop|";}
+    97% {content: "Develope|";}
+    100% {content: "Developer|";}
+  }
+.home button{
+    border: 1px solid #fff;
+    padding: 15px 45px;
+    transition: all 0.5s;
+}
+.home button:hover{
+    background-color: #fff;
+    color: #000 !important;
+}
+.setting{
+    top: 30%;
+    background-color: rgb(51, 51, 51);
+    width: 40px;
+    height: 40px;
+    border-radius: 0 10px 10px 0;
+}
+.dot{
+    border: 2px solid #fff;
+    padding: 35px 15px;
+    bottom: 60px;
+    left: 50%;
+    animation: dot 2s infinite alternate;
+}
+.dot::after{
+    content: '';
+    width: 5px;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 47%;
+}
+@keyframes dot {
+    0%{
+        bottom: 60px;
+    }
+    25%{
+        bottom: 100px;
+    }
+    50%{
+        bottom: 80px;
+    }
+    75%{
+        bottom: 100px;
+    }
+    100%{
+        bottom: 60px;
+    }
+}
+/* end home */
+/* start about */
+.about h3 span{
+    color: var(--primaryColor);
+}
+.icons i{
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.icons i:hover{
+    color: var(--primaryColor);
+    border: 2px solid var(--primaryColor);
+}
+/* end about */
+/* starrt client */
+.client i{
+    color: var(--primaryColor);
+}
+.client span{
+    color: var(--primaryColor);
+}
+.carousel-indicators button{
+    background-color: var(--primaryColor) !important;
+    height: 6px !important;
+    border-radius: 40%;
+}
+/* enc cleint */
+/* start work */
+.work .layer{
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.work .item:hover .layer{
+    opacity: 1;
+}
+.work .item:hover .workImage{
+    transform: scale( 1.3);
+}
+.workImage{
+    transition: all 0.5s;
+}
+.work ul{
+    border: none !important;
+}
+.work ul .active{
+    background-color: var(--primaryColor) !important;
+    color: #fff !important;
+    border-radius: 25px !important;
+}
+/* end work */
+/* start blog */
+.blog p span{
+    color: var(--primaryColor);
+}
+/* end blog */
+/* start contact */
+.contact i{
+    color: var(--primaryColor);
+}
+.contact button{
+    background-color: var(--primaryColor) !important;
+}
